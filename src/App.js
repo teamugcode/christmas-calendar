@@ -6,7 +6,11 @@ function App() {
 	return (
 		<div className="App">
 			<Header />
-			<Calendar />
+			<main className="main">
+				<div className="calendar">
+					<Calendar />
+				</div>
+			</main>
 		</div>
 	);
 }

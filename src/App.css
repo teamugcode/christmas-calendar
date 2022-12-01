@@ -1,3 +1,40 @@
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	background: #21a767;
+	line-height: 24px;
+}
+
+.App {
+	padding: 0 15px;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calendar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 1100px;
+}
+
+.title {
+	text-align: center;
+	color: aquamarine;
+	margin: 50px 0;
+	line-height: 50px;
+}
+
+.subline {
+	text-align: center;
+	color: aquamarine;
+	margin-bottom: 50px;
+}
+
 .door {
 	display: flex;
 	justify-content: center;
@@ -11,4 +48,19 @@
 	color: #fff;
 	border: 3px solid #fff;
 	transition: background-color 0.3s ease-in;
+}
+
+.door.open {
+	background: #366c53;
+	color: aquamarine;
+	font-size: 16px;
+}
+
+.door:hover {
+	background: #366c53;
+}
+
+.text {
+	padding: 10px;
+	text-align: center;
 }
