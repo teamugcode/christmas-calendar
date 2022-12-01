@@ -1,4 +1,6 @@
-export const randomizedDoors = [
+let doorArray = [];
+
+const exampleDoorArray = [
 	{
 		text: "Calendar door example text 1",
 	},
@@ -71,14 +73,33 @@ export const randomizedDoors = [
 	{
 		text: "Calendar door example text 24",
 	},
-]
-	.map((item, index) => ({
-		...item,
-		num: index + 1,
-		isOpen: false,
-		rand: Math.random(),
-	}))
-	.sort((a, b) => a.rand - b.rand);
+];
+
+doorArray = exampleDoorArray;
+
+let doorsArrayFromEnv = process.env.REACT_APP_CALENDAR_TEXTS;
+
+if (doorsArrayFromEnv) {
+	doorArray = JSON.parse(doorsArrayFromEnv);
+
+	if (!doorArray | !Array.isArray(doorArray) | (doorArray.length === 0)) {
+		console.warning(
+			"Your array from env is not formatted correctly. Using example values."
+		);
+		doorArray = exampleDoorArray;
+	}
+}
+
+export const randomizedDoors = () => {
+	return doorArray
+		.map((item, index) => ({
+			...item,
+			num: index + 1,
+			isOpen: false,
+			rand: Math.random(),
+		}))
+		.sort((a, b) => a.rand - b.rand);
+};
 
 export const arraysAreEqual = (arr1, arr2) => {
 	if (arr1.length !== arr2.length) return false;
