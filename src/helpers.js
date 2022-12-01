@@ -1,4 +1,4 @@
-export const randomDoors = [
+export const randomizedDoors = [
 	{
 		text: "Calendar door example text 1",
 	},
