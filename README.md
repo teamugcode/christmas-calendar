@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Simple Christmas / Advent Calendar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![calendar_example](https://user-images.githubusercontent.com/16792417/205364957-13978807-e800-46a0-9023-6056c0ef4fb5.PNG)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Lists calendar doors with random order, allows to open calendar door on current day and saves opened doors to localStorage so user does not have to open same doors again.
 
-### `npm start`
+This code is based on my React practice three years ago so it may includes interesting choices :joy:
+ 
+Live version is available [on my website](https://www.teamugcode.fi/xmas/) for some time and there you will find some phrases to cheer your days! :smile:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technique
+This project is created with [Create React App](https://github.com/facebook/create-react-app).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Node version v16.15.1 works at least.
 
-### `npm test`
+If you want fork this calendar to make your own:
+1. Run `npm ci` to install the dependencies
+2. Run `npm start` to start developing
+3. Replace example texts with your own [here](https://github.com/teamugcode/christmas-calendar/blob/fe7241e6103a07ab0bad467fd6c474627693ea0b/src/helpers.js#L3-L76) or use dirty .env hack like `REACT_APP_CALENDAR_TEXTS='[{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"},{"text":"A"}]'`.
+4. Run `npm build` if you want publish it in single folder or choose your own way to publish from [Create React App Deployment Section](https://create-react-app.dev/docs/deployment/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
